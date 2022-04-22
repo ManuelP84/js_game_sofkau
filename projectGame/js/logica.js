@@ -1,3 +1,4 @@
+import preguntas from '../js/questions'
 
 //variables correspondientes a los id y clases en HTML
 const categoria = document.querySelector('#categoria');
@@ -7,7 +8,7 @@ const progresoAviso = document.querySelector('#progreso');
 const puntos = document.querySelector('#puntos');
 const barraProgresoLlena = document.querySelector('#barraProgresoLlena');
 let preguntaActual = {}
-let respuestaObtenida= true;
+//let respuestaObtenida= true;
 let puntaje = 0; //Puntaje inicial
 let contadorPreguntas = 0; //Contador de preguntas
 let preguntasDisponibles = []
@@ -24,7 +25,7 @@ empezarJuego = () => {
 }
 
 obtenerNuevaPregunta = () =>{
-    if(preguntasDisponibles.length ===0 || contadorPreguntas >= PREGUNTAS_MAX ){
+    if(contadorPreguntas >= PREGUNTAS_MAX ){
         localStorage.setItem('puntajeMasReciente', puntaje) 
         return window.location.assign('/fin.html')
      }
@@ -46,8 +47,8 @@ obtenerNuevaPregunta = () =>{
         const number = opcion.dataset['number']
         opcion.innerText = preguntaActual["opcion" + number]
  }) 
-    preguntasDisponibles.splice(indicePreguntas, 1)
-    respuestaObtenida = true
+    //preguntasDisponibles.splice(indicePreguntas, 1)
+    //respuestaObtenida = true
 }
 
 function select_id(id){
@@ -56,7 +57,8 @@ function select_id(id){
 
 opciones.forEach(opcion => {
     opcion.addEventListener('click', e => {
-        if(!respuestaObtenida) return 
+        //if(!respuestaObtenida) 
+        //return 
 
         respuestaObtenida = false
         const opcionSeleccionada = e.target
