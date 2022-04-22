@@ -82,7 +82,7 @@ opciones.forEach(opcion => {
         }
         else {
             window.alert('¡Has perdido!')
-            terminarJuego()   //si es incorrecta ejecuta la función terminarJuego()
+            terminoJuego()   //si es incorrecta ejecuta la función terminarJuego()
         }
         opcionSeleccionada.parentElement.classList.add(classToApply)
 
@@ -99,4 +99,8 @@ var incrementarPuntaje = num => {
     puntos.innerText = puntaje;
 }
 
+var terminoJuego = () => {
+	localStorage.setItem('puntajeMasReciente', puntaje)
+    return window.location.assign('../template/endGame.html')
+}
 empezarJuego()
