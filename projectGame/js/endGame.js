@@ -13,7 +13,7 @@ usuario.addEventListener('keyup', () => {
     botonGuardarPuntaje.disable = !usuario.value
 })
 
-guardarPuntajeAlto = e => {
+let guardarPuntajeAlto = e => {
    e.preventDefault()
    
    const puntaje ={
