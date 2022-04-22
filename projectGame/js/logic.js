@@ -10,14 +10,12 @@ let preguntaActual = {};
 
 let puntaje = 0;
 let contadorPreguntas = 0;
-let preguntasDisponibles = [];
 const PUNTOS_CORRECTA = 100;
 const PREGUNTAS_MAX = 5;
 
 let empezarJuego = () => {
   contadorPreguntas = 0;
   puntaje = 0;
-  preguntasDisponibles = [...preguntas];
   obtenerNuevaPregunta();
 };
 
