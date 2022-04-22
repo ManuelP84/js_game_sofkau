@@ -4,7 +4,7 @@ export const preguntas = [
       //"nivel"  1
       "categoria" : "Cultura General",
       "nivel" : 1,
-      "pregunta" : "Cuál es el idioma oficial de Brasil?",
+      "pregunta" : "¿Cuál es el idioma oficial de Brasil?",
       "opcion1": "Brasilero",
       "opcion2": "Italiano",
       "opcion3": "Portugues",
@@ -14,7 +14,7 @@ export const preguntas = [
     {
       "categoria" : "Deportes",
       "nivel" : 1,
-      "pregunta" : "Cada cuántos años se realizan los Juegos Olímpicos?",
+      "pregunta" : "¿Cada cuántos años se realizan los Juegos Olímpicos?",
       "opcion1": "3 años",
       "opcion2": "6 años",
       "opcion3": "5 años",
@@ -24,7 +24,7 @@ export const preguntas = [
     {
       "categoria" : "Geografia",
       "nivel" : 1,
-      "pregunta" : "Cuál es la capital de El Salvador?",
+        "pregunta" : "¿Cuál es la capital de El Salvador?",
       "opcion1": "Managua",
       "opcion2": "San Jose",
       "opcion3": "San Salvador",
@@ -34,7 +34,7 @@ export const preguntas = [
     {
       "categoria" : "Ciencia",
       "nivel" : 1,
-      "pregunta" : "Cuál es el cuarto planeta del sistema solar?",
+      "pregunta" : "¿Cuál es el cuarto planeta del sistema solar?",
       "opcion1": "Tierra",
       "opcion2": "Mercurio",
       "opcion3": "Venus",
@@ -44,7 +44,7 @@ export const preguntas = [
     {
       "categoria" : "Arte",
       "nivel" : 1,
-      "pregunta" : 'Quién escribió "Cien años de soledad"?',
+      "pregunta" : '¿Quién escribió "Cien años de soledad"?',
       "opcion1": "Rafael Pombo",
       "opcion2": "José Eustasio Rivera",
       "opcion3": "Jorge Isaacs",
@@ -57,7 +57,7 @@ export const preguntas = [
       // "nivel"  2
       "categoria" : "Cultura General",
       "nivel" : 2,
-      "pregunta" : "El origen del café proviene de...",
+    "pregunta" : "¿El origen del café proviene de...?",
       "opcion1": "Etiopía",
       "opcion2": "Egipto",
       "opcion3": "Indonesia",
@@ -67,7 +67,7 @@ export const preguntas = [
     {
       "categoria" : "Deportes",
       "nivel" : 2,
-      "pregunta" : "Qué jugador de fútbol ha ganado más copas del mundo junto a su equipo?",
+      "pregunta" : "¿Qué jugador de fútbol ha ganado más copas del mundo junto a su equipo?",
       "opcion1": "Messi",
       "opcion2": "Pelé",
       "opcion3": "Maradona",
@@ -77,7 +77,7 @@ export const preguntas = [
     {
       "categoria" : "Geografia",
       "nivel" : 2,
-      "pregunta" : "Cuál es la montaña mas alta del mundo?",
+      "pregunta" : "¿Cuál es la montaña mas alta del mundo?",
       "opcion1": "K2",
       "opcion2": "Kanchenjunga",
       "opcion3": "Manaslu",
@@ -87,7 +87,7 @@ export const preguntas = [
     {
       "categoria" : "Ciencia",
       "nivel" : 2,
-      "pregunta" : "Cuál es el elemento más abundante de la Tierra?",
+      "pregunta" : "¿Cuál es el elemento más abundante de la Tierra?",
       "opcion1": "Oxigeno",
       "opcion2": "Carbono",
       "opcion3": "Hidrógeno",
@@ -97,7 +97,7 @@ export const preguntas = [
     {
       "categoria" : "Arte",
       "nivel" : 2,
-      "pregunta" : "Cuál fue la primera película que apareció de Disney?",
+      "pregunta" : "¿Cuál fue la primera película que apareció de Disney?",
       "opcion1": "Blancanieves",
       "opcion2": "La bella y la bestia",
       "opcion3": "Pinocho",
@@ -110,7 +110,7 @@ export const preguntas = [
       //"nivel"  3
       "categoria" : "Cultura General",
       "nivel" : 3,
-      "pregunta" : "En que año se fundó la franquicia de comida rápida McDonalds?",
+      "pregunta" : "¿En que año se fundó la franquicia de comida rápida McDonalds?",
       "opcion1": "1945",
       "opcion2": "1940",
       "opcion3": "1954",
@@ -120,7 +120,7 @@ export const preguntas = [
     {
       "categoria" : "Deportes",
       "nivel" : 3,
-      "pregunta" : "Qué animal es la mascota del Giro de Italia? ",
+      "pregunta" : "¿Qué animal es la mascota del Giro de Italia? ",
       "opcion1": "Perro",
       "opcion2": "Zorro",
       "opcion3": "Alce",
@@ -130,7 +130,7 @@ export const preguntas = [
     {
       "categoria" : "Geografia",
       "nivel" : 3,
-      "pregunta" : "Cuál es la capital de Marruecos?",
+      "pregunta" : "¿Cuál es la capital de Marruecos?",
       "opcion1": "Rabat",
       "opcion2": "Kiev",
       "opcion3": "Varsovia",
@@ -140,7 +140,7 @@ export const preguntas = [
     {
       "categoria" : "Ciencia",
       "nivel" : 3,
-      "pregunta" : "Cómo se llama la unidad de intensidad de la corriente eléctrica?",
+      "pregunta" : "¿Cómo se llama la unidad de intensidad de la corriente eléctrica?",
       "opcion1": "Voltio",
       "opcion2": "Amperio",
       "opcion3": "Ohmio",
@@ -150,7 +150,7 @@ export const preguntas = [
     {
       "categoria" : "Arte",
       "nivel" : 3,
-      "pregunta" : "Dónde nació el escritor Julio Cortázar?",
+      "pregunta" : "¿Dónde nació el escritor Julio Cortázar?",
       "opcion1": "Uruguay",
       "opcion2": "Argentina",
       "opcion3": "Perú",
@@ -163,7 +163,7 @@ export const preguntas = [
       //"nivel"  4
       "categoria" : "Cultura General",
       "nivel" : 4,
-      "pregunta" : "Qué enfermedad tenía el legendario astrofísico Stephen Hawking?",
+      "pregunta" : "¿Qué enfermedad tenía el legendario astrofísico Stephen Hawking?",
       "opcion1": "Enfermedad de Addison",
       "opcion2": "Progeria de Hutchinson-Gilford",
       "opcion3": "Síndrome de Marfan",
@@ -173,7 +173,7 @@ export const preguntas = [
     {
       "categoria" : "Deportes",
       "nivel" : 4,
-      "pregunta" : "Cuál es el deporte en el que destacó Carl Lewis?",
+      "pregunta" : "¿Cuál es el deporte en el que destacó Carl Lewis?",
       "opcion1": "Atletismo",
       "opcion2": "Gimnasia",
       "opcion3": "Natación",
@@ -183,7 +183,7 @@ export const preguntas = [
     {
       "categoria" : "Geografia",
       "nivel" : 4,
-      "pregunta" : "En qué pais se encuentra el rio Po?",
+      "pregunta" : "¿En qué pais se encuentra el rio Po?",
       "opcion1": "Francia",
       "opcion2": "España",
       "opcion3": "Portugal",
@@ -193,7 +193,7 @@ export const preguntas = [
     {
       "categoria" : "Ciencia",
       "nivel" : 4,
-      "pregunta" : "Dónde están ubicados los huesos escafoides?",
+      "pregunta" : "¿Dónde están ubicados los huesos escafoides?",
       "opcion1": "Cadera",
       "opcion2": "Muñeca",
       "opcion3": "Rodilla",
@@ -203,7 +203,7 @@ export const preguntas = [
     {
       "categoria" : "Arte",
       "nivel" : 4,
-      "pregunta" : "Quién es el director de la película Big Fish?",
+      "pregunta" : "¿Quién es el director de la película Big Fish?",
       "opcion1": "Peter Jackson",
       "opcion2": "Steven Spielberg",
       "opcion3": "Tim Burton",
@@ -216,7 +216,7 @@ export const preguntas = [
       // "nivel"  5
       "categoria" : "Cultura General",
       "nivel" : 5,
-      "pregunta" : "Qué trilogía de las películas basadas en los cómics de Marvel recaudó más dinero en taquilla?",
+      "pregunta" : "¿Qué trilogía de las películas basadas en los cómics de Marvel recaudó más dinero en taquilla?",
       "opcion1": "Iron Man",
       "opcion2": "Wolverine",
       "opcion3": "Capitán América",
@@ -226,7 +226,7 @@ export const preguntas = [
     {
       "categoria" : "Deportes",
       "nivel" : 5,
-      "pregunta" : "Cómo se llamaba el ciclista italiano apodado 'Il campionissimo'?",
+      "pregunta" : "¿Cómo se llamaba el ciclista italiano apodado 'Il campionissimo'?",
       "opcion1": "Fausto Coppi",
       "opcion2": "Valerio Agnoli",
       "opcion3": "Enrico Battaglin",
@@ -236,7 +236,7 @@ export const preguntas = [
     {
       "categoria" : "Geografia",
       "nivel" : 5,
-      "pregunta" : "Cuál es la capital de Kazajistán?",
+      "pregunta" : "¿Cuál es la capital de Kazajistán?",
       "opcion1": "Astaná",
       "opcion2": "Taraz",
       "opcion3": "Semey",
@@ -246,7 +246,7 @@ export const preguntas = [
     {
       "categoria" : "Ciencia",
       "nivel" : 5,
-      "pregunta" : "Qué distancia hay de la Tierra al Sol?",
+      "pregunta" : "¿Qué distancia hay de la Tierra al Sol?",
       "opcion1": "Astaná",
       "opcion2": "Taraz",
       "opcion3": "Semey",
@@ -256,7 +256,7 @@ export const preguntas = [
     {
       "categoria" : "Arte",
       "nivel" : 5,
-      "pregunta" : "En qué año se celebró el festival de Woodstock?",
+      "pregunta" : "¿En qué año se celebró el festival de Woodstock?",
       "opcion1": "1970",
       "opcion2": "1969",
       "opcion3": "1955",

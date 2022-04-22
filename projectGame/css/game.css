@@ -80,7 +80,6 @@ h3 #categoria {
   background: white;
   text-align: center;
   display: flex;
-
   width: 66.5%;
   margin: 5px;
   font-size: 18px;
@@ -145,13 +144,12 @@ h3 #categoria {
 
 #barraProgresoLlena {
   height: 100%;
-  background: rgba(90, 63, 63, 0.336);
+  background: green;
   width: 0%;
 }
 .footer--center {
   display: flex;
 }
-
 .center {
   display: block;
 }
