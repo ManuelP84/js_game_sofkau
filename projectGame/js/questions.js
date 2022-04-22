@@ -246,12 +246,12 @@ export const preguntas = [
     {
       "categoria" : "Ciencia",
       "nivel" : 5,
-      "pregunta" : "¿Qué distancia hay de la Tierra al Sol?",
-      "opcion1": "Astaná",
-      "opcion2": "Taraz",
-      "opcion3": "Semey",
-      "opcion4": "Almatý",
-      "respuesta": 1,
+      "pregunta" : "Qué distancia hay de la Tierra al Sol?",
+      "opcion1": "155,6 millones de km",
+      "opcion2": "149,6 millones de km",
+      "opcion3": "180 millones de km",
+      "opcion4": "128,6 millones de km",
+      "respuesta": 2,
     },
     {
       "categoria" : "Arte",
