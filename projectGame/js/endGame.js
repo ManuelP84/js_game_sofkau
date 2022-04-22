@@ -5,7 +5,7 @@ const puntajeMasReciente = localStorage.getItem('puntajeMasReciente')
 
 const puntajesAltos = JSON.parse(localStorage.getItem('puntajesAltos')) || []
 
-const PUNTAJES_MAS_ALTOS = 5; //muestra los 5 puntajes más altos
+const PUNTAJES_MAS_ALTOS = 5;
 
 puntajeFinal.innerText = puntajeMasReciente
 
