@@ -32,11 +32,10 @@ var obtenerNuevaPregunta = () =>{
     //Si no hay preguntas disponibles o el contador llega al numero de preguntas máximo por juego,
     // se guarda el puntaje en el almacenamiento local y se redirige a la vista de fin de juego
     
-    contadorPreguntas ++;
-    progresoAviso.innerText = `Pregunta ${contadorPreguntas} de ${PREGUNTAS_MAX}` //Progreso de juego
-    barraProgresoLlena.style.width = `${(contadorPreguntas/PREGUNTAS_MAX) * 100}%`//Barra de progreso
+    progresoAviso.innerText = `Pregunta ${contadorPreguntas + 1} de ${PREGUNTAS_MAX}` //Progreso de juego
+    barraProgresoLlena.style.width = `${(contadorPreguntas /PREGUNTAS_MAX) * 100}%`//Barra de progreso
     
-    categoria.innerText = `Ronda ${contadorPreguntas}` //Categoria de la pregunta (Ronda)
+    
 
     //const indicePreguntas = Math.floor(Math.random() * preguntasDisponibles.length) //Elige el indice de una pregunta al azar
     //preguntaActual = preguntasDisponibles[indicePreguntas] //Pregunta seleccionada
@@ -45,12 +44,14 @@ var obtenerNuevaPregunta = () =>{
     const indicePreguntas = Math.floor(Math.random() * 5)
     preguntaActual =  preguntas[contadorPreguntas][indicePreguntas]
     pregunta.innerText = preguntaActual.pregunta;
-
+    contadorPreguntas ++;
+    categoria.innerText = preguntaActual.categoria; //Categoria de la pregunta
     //imprime las opciones correspondientes a la pregunta seleccionada
     opciones.forEach(opcion => {
         const number = opcion.dataset['number']
         opcion.innerText = preguntaActual["opcion" + number]
  }) 
+
     //preguntasDisponibles.splice(indicePreguntas, 1)
     //respuestaObtenida = true
 }
