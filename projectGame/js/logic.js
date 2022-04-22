@@ -51,14 +51,19 @@ var obtenerNuevaPregunta = () =>{
         const number = opcion.dataset['number']
         opcion.innerText = preguntaActual["opcion" + number]
  }) 
-
     //preguntasDisponibles.splice(indicePreguntas, 1)
     //respuestaObtenida = true
 }
 
-//function select_id(id){
-//    return document.getElementById(id)
-//}
+function select_id(id){
+    return document.getElementById(id)
+}
+
+var btn = document.getElementById("terminarBoton");
+btn.addEventListener("click", function terminarJuego() {
+	localStorage.setItem('puntajeMasReciente', puntaje)
+    return window.location.assign('../template/endGame.html')
+}, false);
 
 opciones.forEach(opcion => {
     opcion.addEventListener('click', e => {
@@ -87,13 +92,11 @@ opciones.forEach(opcion => {
         }, 1000) //tiempo que tardar en aparecer la siguiente pregunta
     })
 })
+
 var incrementarPuntaje = num => {
     //Acumula los puntajes y los imprime en la casilla de puntaje
     puntaje+=num; 
     puntos.innerText = puntaje;
 }
-var terminarJuego= () => {
-    localStorage.setItem('puntajeMasReciente', puntaje) //al terminar el juego, guarda el puntaje en el almacenamiento local
-    return window.location.assign('../template/endGame.html') //Redirije a la vista de fin de juego
-}
+
 empezarJuego()
