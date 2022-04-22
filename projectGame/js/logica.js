@@ -11,3 +11,5 @@ let respuestaObtenida= true;
 let puntaje = 0; //Puntaje inicial
 let contadorPreguntas = 0; //Contador de preguntas
 let preguntasDisponibles = []
+const PUNTOS_CORRECTA = 100; //Puntos ganados por cada respuesta correcta
+const PREGUNTAS_MAX = 5; //5 preguntas max por juego
