@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fin del juego</title>
+    <title>GAME OVER</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/endGame.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../asset/icons/33756_mario_question_icon.png"
+      type="image/png"
+    />
   </head>
   <body>
     <div class="contenedor">
       <div id="fin">
+        <p class="parrafo--score">Tu Score fue de</p>
         <h1 id="puntajeFinal">0</h1>
         <form class="end-form-contenedor">
           <h2 id="texto-final">Ingresa tu nombre para guardar tu puntaje</h2>
@@ -25,11 +36,11 @@
             type="submit"
             onclick="guardarPuntajeAlto(event)"
           >
-            Guardar
+            <b>Guardar</b>
           </button>
         </form>
-        <a href="../template//game.html" class="btn">Jugar de nuevo</a>
-        <a href="./" class="btn">Ir al Inicio</a>
+        <a href="../template//game.html" class="btn"><b>Jugar de nuevo</b></a>
+        <a href="./" class="btn"><b>Ir al Inicio</b></a>
       </div>
     </div>
     <script src="./js/endGame.js"></script>
