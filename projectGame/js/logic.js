@@ -71,14 +71,14 @@ opciones.forEach((opcion) => {
       activarBoton();
       setTimeout(() => {
         terminoJuego();
-      }, 2000);
+      }, 1900);
     }
     opcionSeleccionada.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
       opcionSeleccionada.parentElement.classList.remove(classToApply);
       obtenerNuevaPregunta();
-    }, 3000);
+    }, 2000);
   });
 });
 
