@@ -60,7 +60,7 @@ opciones.forEach(opcion => {
         //if(!respuestaObtenida) 
         //return 
 
-        respuestaObtenida = false
+        //respuestaObtenida = false
         const opcionSeleccionada = e.target
         const respuestaSeleccionada = opcionSeleccionada.dataset['number']
 
