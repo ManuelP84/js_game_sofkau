@@ -36,5 +36,57 @@ obtenerNuevaPregunta = () =>{
     barraProgresoLlena.style.width = `${(contadorPreguntas/PREGUNTAS_MAX) * 100}%`//Barra de progreso
     
     categoria.innerText = `Ronda ${contadorPreguntas}` //Categoria de la pregunta (Ronda)
+
+    const indicePreguntas = Math.floor(Math.random() * preguntasDisponibles.length) //Elige el indice de una pregunta al azar
+    preguntaActual = preguntasDisponibles[indicePreguntas] //Pregunta seleccionada
+    pregunta.innerText = preguntaActual.pregunta; //Imprime la pregunta seleccionada en la vista
+
+    //imprime las opciones correspondientes a la pregunta seleccionada
+    opciones.forEach(opcion => {
+        const number = opcion.dataset['number']
+        opcion.innerText = preguntaActual["opcion" + number]
+ }) 
+    preguntasDisponibles.splice(indicePreguntas, 1)
+    respuestaObtenida = true
 }
 
+function select_id(id){
+    return document.getElementById(id)
+}
+
+opciones.forEach(opcion => {
+    opcion.addEventListener('click', e => {
+        if(!respuestaObtenida) return 
+
+        respuestaObtenida = false
+        const opcionSeleccionada = e.target
+        const respuestaSeleccionada = opcionSeleccionada.dataset['number']
+
+        //verifica que la opción seleccionada sea la respuesta correcta
+        let classToApply = respuestaSeleccionada == preguntaActual.respuesta ? 'correcto' : 'incorrecto'
+        
+        if(classToApply === 'correcto'){
+            incrementarPuntaje(PUNTOS_CORRECTA) //si es correcta suma 100 puntos 
+        }
+        else {
+            window.alert('¡Has perdido!')
+            terminarJuego()   //si es incorrecta ejecuta la función terminarJuego()
+        }
+        opcionSeleccionada.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            opcionSeleccionada.parentElement.classList.remove(classToApply)
+            obtenerNuevaPregunta()
+        }, 1000) //tiempo que tardar en aparecer la siguiente pregunta
+    })
+})
+incrementarPuntaje = num => {
+    //Acumula los puntajes y los imprime en la casilla de puntaje
+    puntaje+=num; 
+    puntos.innerText = puntaje;
+}
+terminarJuego= () => {
+    localStorage.setItem('puntajeMasReciente', puntaje) //al terminar el juego, guarda el puntaje en el almacenamiento local
+    return window.location.assign('/fin.html') //Redirije a la vista de fin de juego
+}
+empezarJuego()
