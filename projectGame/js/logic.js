@@ -1,4 +1,4 @@
-import {preguntas} from '../js/questions.js'
+import {preguntas} from './questions.js'
 
 //variables correspondientes a los id y clases en HTML
 const categoria = document.querySelector('#categoria');
