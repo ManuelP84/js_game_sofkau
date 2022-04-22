@@ -28,5 +28,5 @@ let guardarPuntajeAlto = e => {
    puntajesAltos.splice(5)
 
    localStorage.setItem('puntajesAltos', JSON.stringify(puntajesAltos))
-   window.location.assign('../')
+   window.location.assign('../template/index.html')
 }
