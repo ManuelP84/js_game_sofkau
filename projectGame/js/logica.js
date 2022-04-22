@@ -13,3 +13,28 @@ let contadorPreguntas = 0; //Contador de preguntas
 let preguntasDisponibles = []
 const PUNTOS_CORRECTA = 100; //Puntos ganados por cada respuesta correcta
 const PREGUNTAS_MAX = 5; //5 preguntas max por juego
+
+
+
+empezarJuego = () => {
+    contadorPreguntas = 0;
+    puntaje = 0;
+    preguntasDisponibles = [...preguntas] 
+    obtenerNuevaPregunta()
+}
+
+obtenerNuevaPregunta = () =>{
+    if(preguntasDisponibles.length ===0 || contadorPreguntas >= PREGUNTAS_MAX ){
+        localStorage.setItem('puntajeMasReciente', puntaje) 
+        return window.location.assign('/fin.html')
+     }
+    //Si no hay preguntas disponibles o el contador llega al numero de preguntas máximo por juego,
+    // se guarda el puntaje en el almacenamiento local y se redirige a la vista de fin de juego
+    
+    contadorPreguntas ++;
+    progresoAviso.innerText = `Pregunta ${contadorPreguntas} de ${PREGUNTAS_MAX}` //Progreso de juego
+    barraProgresoLlena.style.width = `${(contadorPreguntas/PREGUNTAS_MAX) * 100}%`//Barra de progreso
+    
+    categoria.innerText = `Ronda ${contadorPreguntas}` //Categoria de la pregunta (Ronda)
+}
+
