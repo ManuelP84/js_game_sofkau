@@ -1,4 +1,4 @@
-import preguntas from '../js/questions'
+import {preguntas} from '../js/questions.js'
 
 //variables correspondientes a los id y clases en HTML
 const categoria = document.querySelector('#categoria');
@@ -17,17 +17,17 @@ const PREGUNTAS_MAX = 5; //5 preguntas max por juego
 
 
 
-empezarJuego = () => {
+var empezarJuego = () => {
     contadorPreguntas = 0;
     puntaje = 0;
     preguntasDisponibles = [...preguntas] 
     obtenerNuevaPregunta()
 }
 
-obtenerNuevaPregunta = () =>{
+var obtenerNuevaPregunta = () =>{
     if(contadorPreguntas >= PREGUNTAS_MAX ){
         localStorage.setItem('puntajeMasReciente', puntaje) 
-        return window.location.assign('/fin.html')
+        return window.location.assign('../template/endGame.html')
      }
     //Si no hay preguntas disponibles o el contador llega al numero de preguntas máximo por juego,
     // se guarda el puntaje en el almacenamiento local y se redirige a la vista de fin de juego
@@ -38,9 +38,13 @@ obtenerNuevaPregunta = () =>{
     
     categoria.innerText = `Ronda ${contadorPreguntas}` //Categoria de la pregunta (Ronda)
 
-    const indicePreguntas = Math.floor(Math.random() * preguntasDisponibles.length) //Elige el indice de una pregunta al azar
-    preguntaActual = preguntasDisponibles[indicePreguntas] //Pregunta seleccionada
-    pregunta.innerText = preguntaActual.pregunta; //Imprime la pregunta seleccionada en la vista
+    //const indicePreguntas = Math.floor(Math.random() * preguntasDisponibles.length) //Elige el indice de una pregunta al azar
+    //preguntaActual = preguntasDisponibles[indicePreguntas] //Pregunta seleccionada
+   //pregunta.innerText = preguntaActual.pregunta; //Imprime la pregunta seleccionada en la vista
+    
+    const indicePreguntas = Math.floor(Math.random() * 5)
+    preguntaActual =  preguntas[contadorPreguntas][indicePreguntas]
+    pregunta.innerText = preguntaActual.pregunta;
 
     //imprime las opciones correspondientes a la pregunta seleccionada
     opciones.forEach(opcion => {
@@ -51,9 +55,9 @@ obtenerNuevaPregunta = () =>{
     //respuestaObtenida = true
 }
 
-function select_id(id){
-    return document.getElementById(id)
-}
+//function select_id(id){
+//    return document.getElementById(id)
+//}
 
 opciones.forEach(opcion => {
     opcion.addEventListener('click', e => {
@@ -82,13 +86,13 @@ opciones.forEach(opcion => {
         }, 1000) //tiempo que tardar en aparecer la siguiente pregunta
     })
 })
-incrementarPuntaje = num => {
+var incrementarPuntaje = num => {
     //Acumula los puntajes y los imprime en la casilla de puntaje
     puntaje+=num; 
     puntos.innerText = puntaje;
 }
-terminarJuego= () => {
+var terminarJuego= () => {
     localStorage.setItem('puntajeMasReciente', puntaje) //al terminar el juego, guarda el puntaje en el almacenamiento local
-    return window.location.assign('/fin.html') //Redirije a la vista de fin de juego
+    return window.location.assign('../template/endGame.html') //Redirije a la vista de fin de juego
 }
 empezarJuego()
