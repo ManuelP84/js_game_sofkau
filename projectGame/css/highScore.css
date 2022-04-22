@@ -1,0 +1,14 @@
+#listaPuntajesAltos{
+    list-style: none;
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.puntaje-alto{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h1{
+    text-align: center;
+}
