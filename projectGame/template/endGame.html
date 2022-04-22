@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin del juego</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="contenedor">
+        <div id="fin">
+                <h1 id="puntajeFinal">0</h1>
+                <form class="end-form-contenedor">
+                    <h2 id="texto-final">
+                        Ingresa tu nombre para guardar tu puntaje
+                    </h2>
+                    <input type="text" name="name" id="usuario" placeholder="Ingresa tu nombre">
+                    <button class="btn" id="guardarPuntaje" type="submit" onclick="guardarPuntajeAlto(event)">Guardar</button>   
+                </form>
+                <a href="./game.html" class="btn">Jugar de nuevo</a>
+                <a href="./" class="btn">Ir al Inicio</a>
+        </div>
+    </div>   
+    <script src="./js/endGame.js"></script> 
+</body>
+</html>
