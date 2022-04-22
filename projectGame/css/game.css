@@ -23,9 +23,7 @@ body {
 }
 
 h1{
-    margin-bottom: 50px;
-    padding: 10px;
-    font-size: 4.rem ;
+    margin-bottom: 20px;
 }
 
 #quiz {
@@ -41,132 +39,116 @@ h1{
     background: aliceblue;
     min-width: 300px;
     width: 70%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
 
 }
 
-.categoria {
-    opacity: 0.4;
-    text-align: left;
-}
-
-a {
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-    padding: 10px;
-    text-decoration: none;
-}
-a button {
-    background: rgb(104, 39, 179);
-    width: 100%;
-    padding: 10px;
-    margin: 6px;
+h3 {
+    margin: 8px;
     text-align: center;
-    font-size: 20px;
+    padding: 5px;
+}
+.cat {
+    opacity: 0.7;
+    text-align: center;
+}
+h3 #categoria{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+.preg{
+    padding: 5px;
+    border-radius: 4px;
+}
+#pregunta{
+    margin: 10px;
+}
+.respuesta {
+    background: white;
+    text-align: center;
+    display:flex;
+    width: 66.5%;
+    margin: 5px;
+    font-size: 18px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-
-a button:hover{
+.respuesta:hover{
     background:rgb(0,204,255);
     cursor: pointer;
-    transition: transform 150ms;
+    box-shadow: 0 0.4rem 1,4rem 0.6 rgba(rgb(0, 0, 0), green, blue, alpha);
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
-    box-shadow: 0 0.4rem 1.4rem 0px 0px rgba(0,114, 244, 0.6);
-    -webkit-transition: transform 150ms;
-    -moz-transition: transform 150ms;
-    -ms-transition: transform 150ms;
-    -o-transition: transform 150ms;
 }
 
-a button[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
+.choice{
+    padding: 10px
 }
 
-#puntaje{
-    background:rgb(255, 230, 0); 
+.correcto{
+    background: rgb(45, 230, 45);
 }
 
-#puntaje:hover{
-    box-shadow: 0 0.4rem 1.4rem 0px 0px rgba(255, 255, 0, 0.6);
+.incorrecto{
+    background: red;
 }
 
-/*pagina fin del juego*/
-
-.end-form-contenedor{
-   width: 100%;
-   display:flex;
-   flex-direction: column;
-   align-items: center;
-   max-width: 30rem; 
-}
-
-input {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 10px;
-    font-size:20px;
-    border: none;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-
-#usuario{
-    margin-bottom: 3rem;
+.textoRespuesta{
+    padding: 5px;
     width: 100%;
-    outline: none;
-}
-
-#texto-final{
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: black;
     text-align: center;
 }
-
-#guardarPuntaje:hover{
-    background:rgb(255, 230, 0);
-    cursor: pointer;
-    transition: transform 150ms;
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    box-shadow: 0 0.4rem 1.4rem 0px 0px rgba(0,114, 244, 0.6);
-    -webkit-transition: transform 150ms;
-    -moz-transition: transform 150ms;
-    -ms-transition: transform 150ms;
-    -o-transition: transform 150ms;
+#progreso{
+    margin-bottom: 25px;
+    font-size: 22px;
 }
 
-.btn{
+.puntuacion{
+    font-size: 22px; 
+}
+#barraProgreso{
+    width: 20rem;
+    height: 1.5rem;
+    border: 0.3rem solid rgb(95, 250, 103);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    overflow: hidden;
+}
+
+#barraProgresoLlena{
+    height:100%;
+    background: rgb(95, 250, 103);
+    width: 0%
+}
+
+footer{
+    display:flex;
+    
+}
+
+footer .display{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+div .btn{
+    margin-top: 60px;
     border: 1px solid black;
     background: rgb(104, 39, 179);
     width: 100%;
     padding: 10px;
-    margin: 6px;
     text-align: center;
     font-size: 20px;
     border-radius: 4px;
@@ -176,22 +158,14 @@ input {
     -o-border-radius: 10px;
     color: black;
 }
-a{
-    color: black;
-}
 
-.btn:hover{
-    background:rgb(0,204,255);
+div .btn:hover{
+    background:rgb(207, 47, 47);
     cursor: pointer;
-    transition: transform 150ms;
+    box-shadow: 0 0.4rem 1,4rem 0.6 rgba(rgb(0, 0, 0), green, blue, alpha);
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
-    box-shadow: 0 0.4rem 1.4rem 0px 0px rgba(0,114, 244, 0.6);
-    -webkit-transition: transform 150ms;
-    -moz-transition: transform 150ms;
-    -ms-transition: transform 150ms;
-    -o-transition: transform 150ms;
 }
