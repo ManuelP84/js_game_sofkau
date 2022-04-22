@@ -1,13 +1,19 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
   transition: all 0.4s;
-  -webkit-transition: all 0.4s;
+  -webkit-transition: all 0.2s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
 
 body {
-  background: blueviolet;
+  background-image: url("../asset/img/wp1949787.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -23,7 +29,10 @@ body {
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 85px;
+  font-size: 70px;
+  color: rgb(3, 3, 3);
+  text-decoration: underline;
 }
 
 #quiz {
@@ -48,6 +57,7 @@ h3 {
   margin: 8px;
   text-align: center;
   padding: 5px;
+  font-size: 45px;
 }
 .cat {
   opacity: 0.7;
@@ -64,11 +74,13 @@ h3 #categoria {
 }
 #pregunta {
   margin: 10px;
+  font-size: 40px;
 }
 .respuesta {
   background: white;
   text-align: center;
   display: flex;
+
   width: 66.5%;
   margin: 5px;
   font-size: 18px;
@@ -79,8 +91,10 @@ h3 #categoria {
   -o-border-radius: 4px;
 }
 .respuesta:hover {
-  background: rgb(0, 204, 255);
+  background: rgb(43, 44, 44);
   cursor: pointer;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
   box-shadow: 0 0.4rem 1, 4rem 0.6 rgba(rgb(0, 0, 0), green, blue, alpha);
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -91,6 +105,7 @@ h3 #categoria {
 
 .choice {
   padding: 10px;
+  margin-left: 158px;
 }
 
 .correcto {
@@ -108,16 +123,18 @@ h3 #categoria {
 }
 #progreso {
   margin-bottom: 25px;
-  font-size: 22px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .puntuacion {
-  font-size: 22px;
+  font-size: 35px;
+  font-weight: bold;
 }
 #barraProgreso {
   width: 20rem;
   height: 1.5rem;
-  border: 0.3rem solid rgb(95, 250, 103);
+  border: 0.3rem solid rgb(0, 0, 0);
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -128,12 +145,15 @@ h3 #categoria {
 
 #barraProgresoLlena {
   height: 100%;
-  background: rgb(95, 250, 103);
+  background: rgba(90, 63, 63, 0.336);
   width: 0%;
 }
-
-footer {
+.footer--center {
   display: flex;
+}
+
+.center {
+  display: block;
 }
 
 footer .display {
@@ -144,7 +164,7 @@ footer .display {
 div .btn {
   margin-top: 60px;
   border: 1px solid black;
-  background: rgb(104, 39, 179);
+  background: rgb(176, 164, 189);
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -158,7 +178,7 @@ div .btn {
 }
 
 div .btn:hover {
-  background: rgb(207, 47, 47);
+  background: rgb(105, 105, 105);
   cursor: pointer;
   box-shadow: 0 0.4rem 1, 4rem 0.6 rgba(rgb(0, 0, 0), green, blue, alpha);
   transform: scale(1.05);

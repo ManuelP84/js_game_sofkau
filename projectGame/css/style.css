@@ -1,4 +1,5 @@
 * {
+  font-family: "Merriweather", serif;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -7,10 +8,11 @@
 }
 
 body {
-  background: blueviolet;
   padding: 0;
   margin: 0;
   text-align: center;
+  background-image: url("../asset/img/wp1949787.png");
+  background-repeat: no-repeat;
 }
 
 .contenedor {
@@ -23,6 +25,7 @@ body {
 }
 
 h1 {
+
   margin-bottom: 50px;
   padding: 10px;
   font-size: 4rem;

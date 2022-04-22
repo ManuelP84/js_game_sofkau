@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GAME</title>
     <link rel="stylesheet" href="../css/game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../asset/icons/33756_mario_question_icon.png"
+      type="image/png"
+    />
   </head>
   <body>
     <div id="quiz">
@@ -38,20 +47,22 @@
         <p class="choice">D</p>
         <p class="textoRespuesta" data-number="4">Opción4</p>
       </div>
-      <footer>
-        <!-- Progreso y barra de progreso -->
-        <div>
-          <p id="progreso">Pregunta 1 de x</p>
-          <div id="barraProgreso">
-            <div id="barraProgresoLlena"></div>
+      <footer class="center">
+        <section class="footer--center">
+          <!-- Progreso y barra de progreso -->
+          <div>
+            <p id="progreso">Pregunta 1 de x</p>
+            <div id="barraProgreso">
+              <div id="barraProgresoLlena"></div>
+            </div>
           </div>
-        </div>
-        <!-- Puntuación -->
-        <div class="display">
-          <p class="puntuacion">Puntuación:</p>
-          <h1 class="puntuacionCantidad" id="puntos">0</h1>
-        </div>
-        <!-- Boton para terminar el juego -->
+          <!-- Puntuación -->
+          <div class="display">
+            <p class="puntuacion">Puntuación:</p>
+            <h1 class="puntuacionCantidad" id="puntos">0</h1>
+          </div>
+          <!-- Boton para terminar el juego -->
+        </section>
         <div>
           <button
             class="btn"
