@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GAME</title>
-</head>
-<body>
-    <header>
-        <h1>Concurso de Preguntas y Respuestas</h1>
-    </header>
-    <main>
-        
-
-
-        
-        
-
-    </main>
-    <footer>
+    <link rel="stylesheet" href="../css/game.css" />
+  </head>
+  <body>
+    <div id="quiz">
+      <h1>Concurso de Preguntas y Respuestas</h1>
+      <div class="encabezado">
+        <!-- Categorias -->
+        <div class="cat">
+          <h3 id="categoria">categoria</h3>
+        </div>
+        <hr />
+        <!-- Preguntas -->
+        <div class="preg">
+          <h2 id="pregunta">pregunta</h2>
+        </div>
+      </div>
+      <!-- Respuestas -->
+      <div class="respuesta" id="btn1">
+        <p class="choice">A</p>
+        <p class="textoRespuesta" data-number="1">Opción1</p>
+      </div>
+      <div class="respuesta" id="btn1">
+        <p class="choice">B</p>
+        <p class="textoRespuesta" data-number="2">Opción2</p>
+      </div>
+      <div class="respuesta" id="btn1">
+        <p class="choice">C</p>
+        <p class="textoRespuesta" data-number="3">Opción3</p>
+      </div>
+      <div class="respuesta" id="btn1">
+        <p class="choice">D</p>
+        <p class="textoRespuesta" data-number="4">Opción4</p>
+      </div>
+      <footer>
         <!-- Progreso y barra de progreso -->
         <div>
-            <p id="progreso">
-                Pregunta 1 de x
-            </p>
-            <div id="barraProgreso">
-                <div id="barraProgresoLlena"></div>
-            </div>
+          <p id="progreso">Pregunta 1 de x</p>
+          <div id="barraProgreso">
+            <div id="barraProgresoLlena"></div>
+          </div>
         </div>
         <!-- Puntuación -->
         <div class="display">
-            <p class="puntuacion">
-                Puntuación: 
-            </p>
-            <h1 class="puntuacionCantidad" id="puntos">
-                0
-            </h1>
+          <p class="puntuacion">Puntuación:</p>
+          <h1 class="puntuacionCantidad" id="puntos">0</h1>
         </div>
-        <!-- Boton para terminar el juego --> 
+        <!-- Boton para terminar el juego -->
         <div>
-            <button class="btn" id="terminarJuego" type="submit" onclick="terminarJuego()">Terminar el juego</button>
+          <button
+            class="btn"
+            id="terminarJuego"
+            type="submit"
+            onclick="terminarJuego()"
+          >
+            Terminar el juego
+          </button>
         </div>
-    </footer>
-   
-</body>
+      </footer>
+    </div>
+    <script src="./js/game.js"></script>
+  </body>
 </html>
