@@ -29,9 +29,9 @@ body {
 }
 
 h1 {
-  margin-bottom: 85px;
+  margin-bottom: 15px;
   font-size: 70px;
-  color: rgb(3, 3, 3);
+  color: rgb(147, 137, 158);
   text-decoration: underline;
 }
 
@@ -162,7 +162,6 @@ footer .display {
 }
 
 div .btn {
-  margin-top: 60px;
   border: 1px solid black;
   background: rgb(176, 164, 189);
   width: 100%;
@@ -186,4 +185,7 @@ div .btn:hover {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+}
+.puntuacionCantidad {
+  color: black;
 }

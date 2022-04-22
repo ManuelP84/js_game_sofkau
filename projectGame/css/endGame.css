@@ -5,10 +5,7 @@
   align-items: center;
   max-width: 30rem;
 }
-
 input {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
   width: 20rem;
   padding: 10px;
   font-size: 20px;
@@ -19,7 +16,7 @@ input {
   -o-border-radius: 4px;
 }
 #usuario {
-  margin-bottom: 3rem;
+  margin-bottom: 15px;
   width: 100%;
   outline: none;
 }
@@ -75,7 +72,7 @@ a {
 }
 #usuario {
   border-color: rgb(8, 8, 8);
-  margin-bottom: 3rem;
+
   width: 100%;
   outline: none;
   text-align: center;
