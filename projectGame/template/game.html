@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME</title>
+    <link rel="stylesheet" href="../css/game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../asset/icons/33756_mario_question_icon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <button type="button" id="btnModal" >Abrir modal</button>
+    <div id="myModal" class="modalContainer">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h2>LO SENTIMOS</h2>
+        <p>TU RESPUESTA ES INCORRECTA,GRACIAS POR PARTICIPAR</p>
+      </div>
+    </div>
+    <div id="quiz">
+      <h1>Concurso de Preguntas y Respuestas</h1>
+      <div class="encabezado">
+        <div class="cat">
+          <h3 id="categoria">categoria</h3>
+        </div>
+        <hr />
+        <div class="preg">
+          <h2 id="pregunta">pregunta</h2>
+        </div>
+      </div>
+      <div class="respuesta" id="btn1">
+        <p class="choice">A</p>
+        <p class="textoRespuesta" data-number="1">Opción1</p>
+      </div>
+      <div class="respuesta" id="btn1">
+        <p class="choice">B</p>
+        <p class="textoRespuesta" data-number="2">Opción2</p>
+      </div>
+      <div class="respuesta" id="btn1">
+        <p class="choice">C</p>
+        <p class="textoRespuesta" data-number="3">Opción3</p>
+      </div>
+      <div class="respuesta" id="btn1">
+        <p class="choice">D</p>
+        <p class="textoRespuesta" data-number="4">Opción4</p>
+      </div>
+      <footer class="center">
+        <section class="footer--center">
+          <div>
+            <p id="progreso">Pregunta 1 de x</p>
+            <div id="barraProgreso">
+              <div id="barraProgresoLlena"></div>
+            </div>
+          </div>
+          <div class="display">
+            <p class="puntuacion">Puntuación:</p>
+            <h1 class="puntuacionCantidad" id="puntos">0</h1>
+          </div>
+        </section>
+        <div>
+          <button class="btn" id="terminarBoton" type="submit">
+            Terminar el juego
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/logic.js" type="module"></script>
+  </body>
+</html>
